@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Deyfran Aragón</title>
+    <style>
+        :root {
+            --principal: #5cdb95; /* Verde menta */
+            --color-01: #f0f0f0; /* Gris claro */
+            --color-02: #05386b; /* Azul oscuro */
+            --fondo-01: #4edee9; /* Verde claro */
+            --fondo-02: #5cb2cc; /* Verde oscuro */
+            --fondo-03: #c9e2e1; /* Blanco */
+            --texto-01: #000000; /* Negro */
+            --texto-02: #ffffff; /* Blanco */
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        body {
+            background-color: var(--fondo-01); /* Fondo de la página */
+            color: var(--texto-01); /* Color del texto */
+            padding: 15px;
+        }
+
+        footer {
+            background-color: var(--fondo-02); /* Fondo del footer */
+            color: var(--texto-02); /* Color del texto del footer */
+            font-size: 13px;
+            line-height: 1.50rem;
+            padding-top: 8px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .franja_roja {
+            background-color: var(--color-02); /* Color de la franja */
+            height: 32px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .plato {
+            border: 2px solid var(--color-02); /* Borde de los platos */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 10px;
+            margin: 10px;
+            background-color: var(--fondo-03); /* Fondo de los platos */
+            display: flex;
+            align-items: center;
+        }
+
+        .plato img {
+            width: 380px; /* Ancho fijo de la imagen */
+            height: 240px; /* Alto fijo de la imagen */
+            object-fit: cover; /* Ajuste para cubrir el contenedor */
+            border-radius: 8px; /* Bordes redondeados para la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+        }
+
+        .plato div {
+            flex: 1; /* Que ocupe el espacio restante */
+        }
+
+        .volver {
+            text-align: center;
+            margin-top: 20px; /* Espacio entre el contenido y el footer */
+        }
+
+        .menu_principal {
+            margin-bottom: 20px; /* Espacio entre el menú y el contenido principal */
+        }
+
+        .menu_principal ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu_principal ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu_principal ul li a {
+            text-decoration: none;
+            color: var(--color-02);
+        }
+
+        .menu_principal ul li a:hover {
+            color: var(--principal);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; font-size: 28px;">MENÚ DE ENTRADAS </h2>
+        
+            <nav>
+                <ul class="menu">
+                    <li class="plato">
+                        <img src="imgs/logos/images.jpg" alt="Entradita Mexicana">
+                        <div>
+                            <h2>Entradita Mexicana</h2>
+                            <p> Salsa de chile con queso · Halo al estilo Metztitlán · Tamalitos de elote · Acelgas con papas · Auténtico mole negro oaxaqueño.</p>
+                            <p>Precio ¢4.000</p>
+                        </div>
+                    </li>
+                    <li class="plato">
+                        <img src="imgs/logos/El Mole.jpg" alt="Imagen del plato 2">
+                        <div>
+                            <h2>El Mole</h2>
+                            <p> Salsas mexicanas muy condimentadas hechas principalmente a base de chiles y especias.</p>
+                            <p>Precio ¢10.000</p>
+                        </div>
+                    </li>
+                    <li class="plato">
+                        <img src="imgs/logos/11.avif" alt="Imagen del plato 3">
+                        <div>
+                            <h2>Barbacoa</h2>
+                            <p>Diversas carnes, de oveja, vacuno, cabra y eventualmente de conejo, de pollo, de pescado, de venado y hasta de iguana, cociéndolas en su propio jugo o al vapor.</p>
+                            <p>Precio ¢7500</p>
+                        </div>
+                    </li>
+                    <li class="plato">
+                        <img src="imgs/logos/Tacos.webp" alt="Imagen del plato 4">
+                        <div>
+                            <h2>Tacos</h2>
+                            <p>Tacos al pastor, de carnitas, de longaniza, cochinita, barbacoa, birria, carne asada, pollo, chile, nopal con queso, chapulines, aguacate, entre otros más.</p>
+                            <p>Precio ¢10.000</p>
+                        </div>
+                    </li>
+                    <li class="plato">
+                        <img src="imgs/logos/Pescado a la talla.jpg" alt="Imagen del plato 5">
+                        <div>
+                            <h2>Pescado a la talla</h2>
+                            <p>Pescado cocinado al carbón o a las brasas, que se abre en mariposa; previamente se unta con una salsa roja a base de chile guajillo y/o chile ancho y otros condimentos..</p>
+                            <p>Precio ¢13.000</p>
+                        </div>
+                    </li>
+                    <li class="plato">
+                        <img src="imgs/logos/Chiles en Nogada.webp" alt="Imagen del plato 6">
+                        <div>
+                            <h2>Chiles en Nogada</h2>
+                            <p>Chile poblano relleno de carne de res y puerco, mezclados con fruta: plátano, manzana, pera, durazno y bañados con una salsa de nuez.</p>
+                            <p>Precio ¢4.000</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
+        <footer>
+            <p>© 2024 . Todos los derechos reservados por Deyfran Aragón.</p>
+        </footer>
+    </header>
